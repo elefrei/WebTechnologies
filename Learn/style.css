@@ -1,12 +1,11 @@
-
+* {
+    color: red;
+}
 
 .button1{
     color: red;
 }
 
-* {
-    color: red;
-}
 
 .container{
 border: dotted ;

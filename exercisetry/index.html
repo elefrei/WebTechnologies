@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Spotify Playlist</title>
+  <script src="main.js" defer></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/node-vibrant/dist/vibrant.min.js"></script>
+
+</head>
+
+<body>
+<div>
+    <header>
+        <img src="maBenz.jpg" alt="Playlist Logo" id="header-image">
+        MY PLAYLIST 
+    </header>
+</div>
+<div id="main-container">
+    <div class="sidebar"> 
+        <ul>
+            <li> Search</li>
+            <li> Playlists</li>
+            <li> Artists</li>
+            <li> Settings</li>
+        </ul>
+    </div>
+
+    <div id="main"> 
+        <!-- Content in the main area will be dynamically updated -->
+    </div>
+  
+    <div class="playlist">
+      <h1></h1>
+      <div data-js="tracks" class="playlist-container">
+        <!-- Tracks will be displayed here -->
+      </div>
+    </div>
+</div>
+</body>
+
+</html>
