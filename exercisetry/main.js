@@ -40,7 +40,7 @@ function addTracksToPage(items) {
         .map((artist) => artist.name)
         .join(", ")}</p>
     `;
-
+// show image when clicked in mainarea, function displayInMainArea
     li.addEventListener('click', (event) => {
       const img = event.target.closest('.imgPlaylist');
       if (img) {
@@ -68,11 +68,9 @@ function displayInMainArea(img) {
         : "<p>No preview available</p>"
     }
   `;
-
-  // Use Vibrant.js to extract the dominant color from the image
+// dominant color of album image selected for background
   const vibrant = new Vibrant(img.src);
   vibrant.getPalette().then((palette) => {
-    // Set the background color of the main section to the most vibrant color
     main.style.backgroundColor = palette.Vibrant.hex;
   });
 }
